@@ -215,7 +215,10 @@ Accept wildcard characters: False
 ```
 
 ### -Top
-An optional value which indicates the number of jobs to return. Default value is 500```yaml
+Specifies the number of jobs to return. 
+The default value is 500.
+
+```yaml
 Type: Int32
 Parameter Sets: All In Resource Group and Account
 Aliases: 

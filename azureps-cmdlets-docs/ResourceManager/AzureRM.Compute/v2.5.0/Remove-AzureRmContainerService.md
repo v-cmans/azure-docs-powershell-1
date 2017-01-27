@@ -62,7 +62,9 @@ Accept wildcard characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.```yaml
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
@@ -75,7 +77,9 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs. The cmdlet is not run.```yaml
+Shows what would happen if the cmdlet runs. The cmdlet is not run.
+
+```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi

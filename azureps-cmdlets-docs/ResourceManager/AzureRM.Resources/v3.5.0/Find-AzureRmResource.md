@@ -208,7 +208,9 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupNameEquals
-The resource group name for a full match.```yaml
+The resource group name for a full match.
+
+```yaml
 Type: String
 Parameter Sets: Lists the resources based on the specified scope., Get a resources using a multi-subscription query.
 Aliases: 
@@ -237,7 +239,10 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceNameEquals
-The resource name for a full match. e.g. if your resource name is testResource, you can specify testResource.```yaml
+Specifies the resource name for a full match. 
+For instance, if your resource name is testResource, you can specify testResource.
+
+```yaml
 Type: String
 Parameter Sets: Lists the resources based on the specified scope., Get a resources using a multi-subscription query., Lists the resources based on the specified scope at the tenant level.
 Aliases: 
@@ -282,7 +287,14 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-The tag filter for the OData query. The expected format is @{tagName=$null} or @{tagName = 'tagValue'}.```yaml
+Specifies tag information, as a hash table, to filter your results.
+Use the following formats: 
+
+`@{tagName=$null}`
+
+`@{tagName = 'tagValue'}`
+
+```yaml
 Type: Hashtable
 Parameter Sets: Lists resources by a tag object specified as a hashset.
 Aliases: 

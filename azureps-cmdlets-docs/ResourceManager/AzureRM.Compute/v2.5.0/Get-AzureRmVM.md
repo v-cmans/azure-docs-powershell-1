@@ -78,9 +78,10 @@ Determines how the virtual machine object is displayed.
 
 Valid values are:
 
--- Compact: displays only top level properties
+- Compact: displays only top level properties
+- Expand: displays all properties in all levels
 
--- Expand: displays all properties in all levels```yaml
+```yaml
 Type: DisplayHintType
 Parameter Sets: GetVirtualMachineInResourceGroupParamSet
 Aliases: 

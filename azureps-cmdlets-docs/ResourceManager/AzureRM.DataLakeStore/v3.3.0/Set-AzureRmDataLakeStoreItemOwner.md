@@ -62,7 +62,9 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Indicates the resulting updated owner should be returned.```yaml
+Indicates this cmdlet returns the resulting updated owner.
+
+```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: 

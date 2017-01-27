@@ -121,7 +121,9 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Indicates the resulting ACL should be returned.```yaml
+Indicates this cmdlet returns the resulting ACL.
+
+```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: 

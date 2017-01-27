@@ -33,7 +33,9 @@ This command changes the default data source and the Tags property of the accoun
 ## PARAMETERS
 
 ### -MaxDegreeOfParallelism
-The optional maximum supported degree of parallelism to update the account with.```yaml
+The optional maximum supported degree of parallelism to update the account with.
+
+```yaml
 Type: Int32
 Parameter Sets: (All)
 Aliases: 
@@ -46,7 +48,9 @@ Accept wildcard characters: False
 ```
 
 ### -MaxJobCount
-The optional maximum supported jobs running under the account at the same time to set.```yaml
+The optional maximum supported jobs running under the account at the same time to set.
+
+```yaml
 Type: Int32
 Parameter Sets: (All)
 Aliases: 
@@ -74,7 +78,9 @@ Accept wildcard characters: False
 ```
 
 ### -QueryStoreRetention
-The optional number of days that job metadata is retained to set in the account.```yaml
+The optional number of days that job metadata is retained to set in the account.
+
+```yaml
 Type: Int32
 Parameter Sets: (All)
 Aliases: 
@@ -117,7 +123,9 @@ Accept wildcard characters: False
 ```
 
 ### -Tier
-The desired commitment tier for this account to use.```yaml
+Specifies the commitment tier for this account to use.
+
+```yaml
 Type: TierType
 Parameter Sets: (All)
 Aliases: 

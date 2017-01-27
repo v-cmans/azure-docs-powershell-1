@@ -56,7 +56,9 @@ Accept wildcard characters: False
 ```
 
 ### -DisableEncryption
-Indicates that the account will not have any form of encryption applied to it.```yaml
+Indicates that the account will not have any form of encryption applied to it.
+
+```yaml
 Type: SwitchParameter
 Parameter Sets: Disable Encryption
 Aliases: 
@@ -185,7 +187,9 @@ Accept wildcard characters: False
 ```
 
 ### -Tier
-The desired commitment tier for this account to use.```yaml
+Specifies the commitment tier for this account to use.
+
+```yaml
 Type: TierType
 Parameter Sets: (All)
 Aliases: 

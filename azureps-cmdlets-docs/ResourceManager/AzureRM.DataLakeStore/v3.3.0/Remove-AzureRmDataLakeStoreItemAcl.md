@@ -77,7 +77,9 @@ Accept wildcard characters: False
 ```
 
 ### -PassThru
-Indicates a boolean response should be returned indicating the result of the delete operation.```yaml
+Indicates that this cmdlet returns a boolean value that indicates the result of the delete operation.
+
+```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: 

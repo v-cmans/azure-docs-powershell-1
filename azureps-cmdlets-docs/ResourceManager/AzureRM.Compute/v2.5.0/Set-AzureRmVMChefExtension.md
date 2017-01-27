@@ -121,7 +121,9 @@ Accept wildcard characters: False
 ```
 
 ### -ChefServiceInterval
-Specifies the frequency (in minutes) at which the chef-service runs. If in case you don't want the chef-service to be installed on the Azure VM then set value as 0 in this field.```yaml
+Specifies the frequency (in minutes) at which the chef-service runs. If in case you don't want the chef-service to be installed on the Azure VM then set value as 0 in this field.
+
+```yaml
 Type: String
 Parameter Sets: (All)
 Aliases: 
@@ -149,7 +151,9 @@ Accept wildcard characters: False
 ```
 
 ### -JsonAttribute
-A JSON string to be added to the first run of chef-client. e.g. -JsonAttribute '{"foo" : "bar"}'```yaml
+A JSON string to be added to the first run of chef-client. e.g. -JsonAttribute '{"foo" : "bar"}'
+
+```yaml
 Type: String
 Parameter Sets: (All)
 Aliases: 

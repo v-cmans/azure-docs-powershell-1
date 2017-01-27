@@ -49,7 +49,9 @@ Accept wildcard characters: False
 ```
 
 ### -FirewallState
-Optionally enable or disable existing firewall rules.```yaml
+Optionally enable or disable existing firewall rules.
+
+```yaml
 Type: FirewallState
 Parameter Sets: (All)
 Aliases: 
@@ -108,7 +110,9 @@ Accept wildcard characters: False
 ```
 
 ### -Tier
-The desired commitment tier for this account to use.```yaml
+Specifies the commitment tier for this account to use.
+
+```yaml
 Type: TierType
 Parameter Sets: (All)
 Aliases: 
@@ -121,7 +125,9 @@ Accept wildcard characters: False
 ```
 
 ### -TrustedIdProviderState
-Optionally enable or disable the existing trusted ID providers.```yaml
+Optionally enable or disable the existing trusted ID providers.
+
+```yaml
 Type: TrustedIdProviderState
 Parameter Sets: (All)
 Aliases: 

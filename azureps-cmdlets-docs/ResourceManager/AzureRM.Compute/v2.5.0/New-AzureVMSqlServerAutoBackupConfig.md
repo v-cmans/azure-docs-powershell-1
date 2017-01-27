@@ -80,7 +80,12 @@ To create a secure string, use the ConvertTo-SecureString cmdlet.
 ## PARAMETERS
 
 ### -BackupScheduleType
-Backup schedule type, manual or automated```yaml
+Specifies the backup schedule type.
+Valid values are: manual and automated.
+
+If you specify manual, you must specify schedule settings.
+
+```yaml
 Type: String
 Parameter Sets: (All)
 Aliases: 
@@ -93,7 +98,9 @@ Accept wildcard characters: False
 ```
 
 ### -BackupSystemDbs
-Backup system databases```yaml
+Specifies that system databases are added to SQL Server Managed Backup.
+
+```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: 
@@ -153,7 +160,10 @@ Accept wildcard characters: False
 ```
 
 ### -FullBackupFrequency
-Sql Server Full Backup frequency, daily or weekly```yaml
+Specifies the frequence of a full backup. 
+Valid values are: daily and weekly.
+
+```yaml
 Type: String
 Parameter Sets: (All)
 Aliases: 
@@ -166,7 +176,10 @@ Accept wildcard characters: False
 ```
 
 ### -FullBackupStartHour
-Hour of the day (0-23) when the Sql Server Full Backup should start```yaml
+Specifies the hour of the day to start a full backup. 
+Valid values are: integers from 0 through 23.
+
+```yaml
 Type: Int32
 Parameter Sets: (All)
 Aliases: 
@@ -179,7 +192,9 @@ Accept wildcard characters: False
 ```
 
 ### -FullBackupWindowInHours
-Sql Server Full Backup window in hours```yaml
+Specifies the length of the window, in hours, in which full back up occurs.
+
+```yaml
 Type: Int32
 Parameter Sets: (All)
 Aliases: 
@@ -192,7 +207,10 @@ Accept wildcard characters: False
 ```
 
 ### -LogBackupFrequencyInMinutes
-Sql Server Log Backup frequency, once every 1-60 minutes```yaml
+Specifies the frequency, in minutes, of the SQL Server Log backup. 
+Valid values are: integers from 1 through 60.
+
+```yaml
 Type: Int32
 Parameter Sets: (All)
 Aliases: 

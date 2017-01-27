@@ -32,7 +32,9 @@ The **Remove-AzureRmVmssExtension** cmdlet removes an extension from the Virtual
 ## PARAMETERS
 
 ### -Id
-Specifies the ID of the extension that this cmdlet removes from the VMSS.```yaml
+Specifies the ID of the extension that this cmdlet removes from the VMSS.
+
+```yaml
 Type: String
 Parameter Sets: IdParameterSet
 Aliases: 
