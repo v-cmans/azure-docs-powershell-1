@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -FullBackupFrequency
-Specifies the frequence of a full backup. 
+Specifies the frequency of a full backup. 
 Valid values are: daily and weekly.
 
 ```yaml
