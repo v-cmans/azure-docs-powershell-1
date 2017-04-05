@@ -39,23 +39,23 @@ New-AzureRmADSpCredential -ServicePrincipalName <String> -CertValue <String> [-S
 ```
 
 ## DESCRIPTION
-The New-AzureRmADSpCredential cmdlet can be used to add a new credential or to roll credentials for a service principal.
-The service principal is identified by supplying either the object id or service principal name.
+The **New-AzureRmADSpCredential** cmdlet adds a credential or rolls credentials for a service principal.
+The service principal is identified by supplying either the object ID or service principal name.
 
 ## EXAMPLES
 
-### Example 1:
-@{paragraph=PS C:\\\>}
+### Example 1: Add a password credential to an existing service principal
+
 
 ```
 PS C:\> New-AzureRmADSpCredential -ObjectId 1f99cf81-0146-4f4e-beae-2007d0668476 -Password "P@ssw0rd!"
 ```
 
-A new password credential is added to an existing service principal.
+This command adds a new password credential to an existing service principal.
 In this example, the supplied password value is added to the service principal using the objectId.
 
-### Example 2:
-@{paragraph=PS C:\\\>}
+### Example 2: Add a key credential to an existing service principal
+
 
 ```
 $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate 
@@ -69,20 +69,14 @@ $credValue = [System.Convert]::ToBase64String($binCert)
 PS C:\> New-AzureRmADSpCredential -ServicePrincipalName "http://test123" -CertValue $credValue -StartDate $cer.GetEffectiveDateString() -EndDate $cer.GetExpirationDateString()
 ```
 
-A new key credential is added to an existing service principal.
+This command adds a key credential to an existing service principal.
 In this example, the supplied base64 encoded public X509 certificate ("myapp.cer") is added to the service principal using its SPN.
 
-### --------------------------  Example 3  --------------------------
-@{paragraph=PS C:\\\>}
-
-```
-PS C:\> New-AzureRmADSpCredential -ServicePrincipalName "http://test123" -CertValue $credValue
-```
 
 ## PARAMETERS
 
 ### -ObjectId
-The object id of the service principal to add the credentials to.
+Specifies The object ID of the service principal to add the credentials to.
 
 ```yaml
 Type: String
@@ -97,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Password
-The password to be associated with the application.
+Specifies the password to be associated with the application.
 
 ```yaml
 Type: String
@@ -112,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartDate
-The effective start date of the credential usage.
+Specifies the effective start date of the credential usage.
 The default start date value is today. 
 For an "asymmetric" type credential, this must be set to on or after the date that the X509 certificate is valid from.
 
@@ -129,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndDate
-The effective end date of the credential usage.
+Specifies the effective end date of the credential usage.
 The default end date value is one year from today. 
 For an "asymmetric" type credential, this must be set to on or before the date that the X509 certificate is valid.
 
@@ -185,7 +179,8 @@ Accept wildcard characters: False
 ```
 
 ### -WhatIf
-
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
 
 ```yaml
 Type: SwitchParameter
@@ -215,7 +210,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertValue
-The value of the "asymmetric" credential type.
+Specifies the value of the "asymmetric" credential type.
 It represents the base 64 encoded certificate.
 
 ```yaml
@@ -231,7 +226,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalName
-The name (SPN) of the service principal to add the credentials to.
+Specifies the name (SPN) of the service principal to add the credentials to.
 
 ```yaml
 Type: String
@@ -253,11 +248,8 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Get-AzureRmADSpCredential]()
+[Get-AzureRmADSpCredential](./Get-AzureRmADSpCredential.md)
 
-[Remove-AzureRmADSpCredential]()
+[Remove-AzureRmADSpCredential](./Remove-AzureRmADSpCredential.md)
 
-[Get-AzureRmADServicePrincipal]()
-
-
-
+[Get-AzureRmADServicePrincipal](./Get-AzureRmADServicePrincipal.md)

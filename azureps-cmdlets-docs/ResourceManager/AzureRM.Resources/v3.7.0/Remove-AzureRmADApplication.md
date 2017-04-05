@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-AzureRmADApplication
 
 ## SYNOPSIS
-Deletes the azure active directory application.
+Deletes the azure Active Directory application.
 
 ## SYNTAX
 
@@ -18,18 +18,18 @@ Remove-AzureRmADApplication -ObjectId <Guid> [-Force] [-InformationAction <Actio
 ```
 
 ## DESCRIPTION
-Deletes the azure active directory application.
+Deletes the azure Active Directory application.
 
 ## EXAMPLES
 
 ### --------------------------  Delete AAD application.  --------------------------
-@{paragraph=PS C:\\\>}
+
 
 ```
 PS C:\> Remove-AzureRmADApplication -ObjectId b4cd1619-80b3-4cfb-9f8f-9f2333425738 -Force
 ```
 
-Deletes the azure active directory application.
+Deletes the azure Active Directory application.
 
 ## PARAMETERS
 
