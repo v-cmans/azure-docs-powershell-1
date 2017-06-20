@@ -1,12 +1,13 @@
 ---
 external help file: Microsoft.Azure.Commands.Websites.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ---
 
 # Start-AzureRmWebAppSlot
 
 ## SYNOPSIS
+Starts a web app slot.
 
 ## SYNTAX
 
@@ -21,25 +22,26 @@ Start-AzureRmWebAppSlot [-WebApp] <Site> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
+The **Start-AzureRmWebAppSlot** cmdlet starts a web app slot.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: Start a web app slot
 ```
-PS C:\> {{ Add example code here }}
+PS C:\> Start-AzureRmWebAppSlot -ResourceGroupName "Default-Web-WestUS" -Name "ContosoWebApp" -Slot "Slot001"
 ```
 
-{{ Add example description here }}
+This command starts the web app slot named "Slot001" pertaining to the web app named "ContosoWebApp" that belongs to the resource group named "Default-Web-WestUS".
 
 ## PARAMETERS
 
 ### -Name
-@{Text=}
+Specifies the name of the web app that is deployed in the slot to start.
 
 ```yaml
 Type: String
 Parameter Sets: S1
-Aliases: 
+Aliases:
 
 Required: True
 Position: 1
@@ -49,12 +51,12 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceGroupName
-@{Text=}
+Specifies the name of the resource group that contains the web app.
 
 ```yaml
 Type: String
 Parameter Sets: S1
-Aliases: 
+Aliases:
 
 Required: True
 Position: 0
@@ -64,12 +66,12 @@ Accept wildcard characters: False
 ```
 
 ### -Slot
-@{Text=}
+Specifies the name of the web app slot to start.
 
 ```yaml
 Type: String
 Parameter Sets: S1
-Aliases: 
+Aliases:
 
 Required: True
 Position: 2
@@ -79,12 +81,12 @@ Accept wildcard characters: False
 ```
 
 ### -WebApp
-@{Text=}
+Specifies a **WebApp** object that contains details about the web app that is deployed in the slot to start.
 
 ```yaml
 Type: Site
 Parameter Sets: S2
-Aliases: 
+Aliases:
 
 Required: True
 Position: 0
@@ -104,3 +106,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
+[Get-AzureRmWebAppSlot](./Get-AzureRmWebAppSlot.md)
+
+[New-AzureRmWebAppSlot](./New-AzureRmWebAppSlot.md)
+
+[Restart-AzureRmWebAppSlot](./Restart-AzureRmWebAppSlot.md)
+
+[Stop-AzureRmWebAppSlot](./Stop-AzureRmWebAppSlot.md)

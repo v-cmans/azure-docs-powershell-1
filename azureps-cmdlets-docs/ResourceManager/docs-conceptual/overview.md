@@ -5,7 +5,7 @@ author: sdwheeler
 ms.author: sewhee
 manager: carmonm
 ms.product: azure
-ms.service: azure-resource-manager
+ms.service: azure-powershell
 ms.devlang: powershell
 ms.topic: conceptual
 ms.manager: carmonm
@@ -32,7 +32,7 @@ The following samples can help you learn how to perform common scenarios with Az
 > [!NOTE]
 > If you have deployments that use the classic deployment model that cannot be converted, you can
 install the Service Management version of Azure PowerShell. For more information, see
-[Install the Azure PowerShell Service Management module](install-azure-ps?view=azuresmps-3.7.0).
+[Install the Azure PowerShell Service Management module](https://docs.microsoft.com/en-us/powershell/azure/install-azure-ps?view=azuresmps-3.7.0).
 
 ### Need help with PowerShell?
 
@@ -45,7 +45,7 @@ You can also watch this video:
 
 ## Other Azure PowerShell modules
 
-* [Azure Active Directory](overview?view=azureadps-2.0)
-* [Azure Information Protection](overview?view=azureipps)
-* [Azure Service Fabric](overview?view=azureservicefabricps)
-* [Azure ElasticDB](overview?view=azureelasticdbjobsps-0.8.33)
+* [Azure Active Directory](https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0#applications)
+* [Azure Information Protection](https://docs.microsoft.com/en-us/powershell/azure/overview?view=azureipps)
+* [Azure Service Fabric](https://docs.microsoft.com/en-us/powershell/azure/overview?view=azureservicefabricps)
+* [Azure ElasticDB](https://docs.microsoft.com/en-us/powershell/azure/overview?view=azureelasticdbjobsps-0.8.33)

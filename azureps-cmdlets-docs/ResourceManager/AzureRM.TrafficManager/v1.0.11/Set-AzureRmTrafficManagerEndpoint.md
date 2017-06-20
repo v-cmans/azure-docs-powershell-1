@@ -1,13 +1,13 @@
 ---
 external help file: Microsoft.Azure.Commands.TrafficManager.dll-Help.xml
-online version: 
+online version:
 schema: 2.0.0
 ---
 
 # Set-AzureRmTrafficManagerEndpoint
 
 ## SYNOPSIS
-{{Fill in the Synopsis}}
+Updates an endpoint in Azure Traffic Manager.
 
 ## SYNTAX
 
@@ -16,26 +16,31 @@ Set-AzureRmTrafficManagerEndpoint -TrafficManagerEndpoint <TrafficManagerEndpoin
 ```
 
 ## DESCRIPTION
-{{Fill in the Description}}
+The **Set-AzureRmTrafficManagerEndpoint** cmdlet updates an endpoint in Azure Traffic Manager.
 
 ## EXAMPLES
 
-### Example 1
+### Example 1: Update the weight of an endpoint
 ```
-PS C:\> {{ Add example code here }}
+PS C:\> $MyTrafficManagerEndpoint = Get-AzureRmTrafficManagerEndpoint -Name "endpoint1" -Type AzureEndpoints -ProfileName "ContosoProfile" -ResourceGroupName "ResourceGroup11"
+PS C:\> $MyTrafficManagerEndpoint.Weight = 20
+PS C:\> Set-AzureRmTrafficManagerEndpoint -TrafficManagerEndpoint $MyTrafficManagerEndpoint
 ```
 
-{{ Add example description here }}
+The **Get-AzureRmTrafficManagerEndpoint** cmdlet gets the endpoint named "endpoint1" and the returned object is stored locally in the *$MyTrafficManagerEndpoint* variable.
+The weight is changed in the local endpoint object.
+The updated object is passed in the *TrafficManagerEndpoint* parameter of the **Set-AzureRmTrafficManagerEndpoint** cmdlet to update the endpoint in Traffic Manager to match the local endpoint object.
 
 ## PARAMETERS
 
 ### -TrafficManagerEndpoint
-The endpoint.
+Specifies a **TrafficManagerEndpoint** object that contains the updated details of the endpoint.
+This cmdlet updates Traffic Manager to match this local object.
 
 ```yaml
 Type: TrafficManagerEndpoint
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: Named
@@ -50,12 +55,19 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerEndpoint
+This cmdlet accepts a **TrafficManagerEndpoint** object from the pipeline.
 
 ## OUTPUTS
 
 ### Microsoft.Azure.Commands.TrafficManager.Models.TrafficManagerEndpoint
+This cmdlet returns a **TrafficManagerEndpoint** object.
 
 ## NOTES
 
 ## RELATED LINKS
 
+[Add-AzureRmTrafficManagerEndpointConfig](./Add-AzureRmTrafficManagerEndpointConfig.md)
+
+[Get-AzureRmTrafficManagerEndpoint](./Get-AzureRmTrafficManagerEndpoint.md)
+
+[Remove-AzureRmTrafficManagerEndpoint](./Remove-AzureRmTrafficManagerEndpoint.md)
